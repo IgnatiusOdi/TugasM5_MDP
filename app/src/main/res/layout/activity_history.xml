@@ -5,28 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".DompetActivity">
+    android:padding="20dp"
+    tools:context=".HistoryActivity">
 
     <TextView
-        android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hi, user !" />
+        android:text="History"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/button2"
+    <Space
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Logout" />
+        android:layout_height="10dp" />
 
-    <TextView
-        android:id="@+id/textView4"
+    <Spinner
+        android:id="@+id/spinnerDompet_history"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Total Tabungan : " />
+        android:layout_height="wrap_content" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv"
+        android:id="@+id/rv_history"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1">
@@ -34,8 +33,9 @@
     </androidx.recyclerview.widget.RecyclerView>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btBack_history"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tambah Dompet" />
+        android:backgroundTint="@color/red"
+        android:text="BACK" />
 </LinearLayout>

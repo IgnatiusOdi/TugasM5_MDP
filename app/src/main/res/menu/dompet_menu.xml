@@ -3,7 +3,10 @@
 
     <item
         android:id="@+id/topup"
-        android:title="Topup" />
+        android:title="Top Up" />
+    <item
+        android:id="@+id/withdraw"
+        android:title="Withdraw" />
     <item
         android:id="@+id/delete"
         android:title="Delete" />

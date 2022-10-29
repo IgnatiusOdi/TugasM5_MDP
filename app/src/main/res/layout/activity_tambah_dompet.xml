@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".TambahDompetActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tambah Dompet"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <EditText
+        android:id="@+id/etNama_dompet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nama Dompet"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etSaldo_dompet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Saldo Awal"
+        android:inputType="number" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <RadioGroup
+        android:id="@+id/rgTipe_dompet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbSpending_dompet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Spending Pocket (1.5%)" />
+
+        <RadioButton
+            android:id="@+id/rbSaving_dompet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saving Pocket (4.5%)" />
+    </RadioGroup>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <EditText
+        android:id="@+id/etPIN_dompet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="PIN"
+        android:inputType="number"
+        android:password="true" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btTambah_dompet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TAMBAH" />
+
+    <Button
+        android:id="@+id/btBack_dompet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:text="BACK" />
+</LinearLayout>
