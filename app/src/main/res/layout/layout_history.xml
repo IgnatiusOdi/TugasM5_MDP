@@ -33,10 +33,28 @@
             android:text="Tabungan dari gaji" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/tvTanggal_history"
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tanggal : 2022 Oct 21"
-        android:textSize="10sp" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTanggal_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Tanggal : 2022 Oct 21"
+            android:textAlignment="textEnd"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tvOrang_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Dari: Christian Chen"
+            android:textAlignment="textEnd"
+            android:textSize="14sp" />
+    </LinearLayout>
+
 </LinearLayout>

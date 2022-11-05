@@ -4,14 +4,14 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/tvNama_list_contact"
+        android:id="@+id/tvNama_contact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="4"
         android:text="Williandy Takhta" />
 
     <Button
-        android:id="@+id/btDelete_list_contact"
+        android:id="@+id/btDelete_contact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/red"

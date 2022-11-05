@@ -9,14 +9,19 @@ class User (
     val name: String,
     val username: String,
     val password: String,
-    val pin: String,
+    var pin: String,
     val norek: String,
     var tanggal: Date,
     var dompet: ArrayList<Dompet> = arrayListOf(Dompet("Main Pocket", 0, "Spending Pocket")),
-    var contact: ArrayList<User> = arrayListOf()
+    var contact: ArrayList<User> = arrayListOf(),
+    var history: ArrayList<History> = arrayListOf(),
 ) {
     companion object {
         var listUser = ArrayList<User>()
+    }
+
+    override fun toString(): String {
+        return "$name - $norek"
     }
 
     fun updateTanggal(cheatDate: Date) {
@@ -53,9 +58,19 @@ class User (
 
                 it.saldo += bungaDompet - biayaAdmin
 
-                it.addHistory(bungaDompet, "Bunga bulan ini", "Umum", SimpleDateFormat("yyyy MMM dd").format(tanggal), 1)
-                it.addHistory(biayaAdmin, "Biaya admin", "Umum", SimpleDateFormat("yyyy MMM dd").format(tanggal), -1)
+                val historyBunga = History(bungaDompet, "Bunga bulan ini", "Umum", SimpleDateFormat("yyyy MMM dd").format(tanggal), 1)
+                val historyBiayaAdmin = History(biayaAdmin, "Biaya admin", "Umum", SimpleDateFormat("yyyy MMM dd").format(tanggal), -1)
+                it.addHistory(historyBunga)
+                it.addHistory(historyBiayaAdmin)
             }
         }
+    }
+
+    fun hitungAsset(): Int {
+        var total = 0
+        for (tabungan in dompet) {
+            total += tabungan.saldo
+        }
+        return total
     }
 }

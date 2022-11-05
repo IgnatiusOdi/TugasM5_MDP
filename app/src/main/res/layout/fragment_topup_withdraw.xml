@@ -8,7 +8,7 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:id="@+id/tvTitleWithdraw_topup_withdraw"
+        android:id="@+id/tvWithdraw_topup_withdraw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
@@ -68,7 +68,7 @@
         android:text="Jenis" />
 
     <Spinner
-        android:id="@+id/spinnerStatus_topup_withdraw"
+        android:id="@+id/spinnerJenis_topup_withdraw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:entries="@array/jenis" />

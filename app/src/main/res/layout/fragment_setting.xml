@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".FragmentSettings">
+    tools:context=".FragmentSetting">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
@@ -24,7 +24,7 @@
         android:paddingBottom="20dp">
 
         <TextView
-            android:id="@+id/tvTanggal_settings"
+            android:id="@+id/tvTanggal_setting"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Tanggal Saat Ini :\n2022 Oct 25" />
@@ -39,7 +39,7 @@
             android:text="Ganti tanggal" />
 
         <EditText
-            android:id="@+id/etTanggal_settings"
+            android:id="@+id/etTanggal_setting"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -56,7 +56,7 @@
             android:text="Ganti PIN" />
 
         <EditText
-            android:id="@+id/etPINBaru_settings"
+            android:id="@+id/etPINBaru_setting"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -70,7 +70,7 @@
             android:layout_weight="1" />
 
         <EditText
-            android:id="@+id/etPINSekarang_settings"
+            android:id="@+id/etPINSekarang_setting"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -83,7 +83,7 @@
             android:layout_height="10dp" />
 
         <Button
-            android:id="@+id/btSave_settings"
+            android:id="@+id/btSave_setting"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="SAVE" />

@@ -27,11 +27,25 @@ class LoginActivity : AppCompatActivity() {
 
         // DEBUG
         User.listUser.add(User("David", "a", "a", "1234", "1589762555", Date()))
+        User.listUser.add(User("Odi", "b", "b", "1234", "1234432112", Date()))
+//        val dummyKontak = User.listUser[1]
+//        val kontak = User.listUser[0].contact
+//        kontak.add(dummyKontak)
+
         val dompet = User.listUser[0].dompet
         dompet.add(Dompet("Business Pocket",15000000,"Spending Pocket"))
         dompet.add(Dompet("Online Payment Pocket",15000000,"Spending Pocket"))
         dompet.add(Dompet("Tabungan Pensiun",60000000,"Saving Pocket"))
-        val history = User.listUser[0].dompet[0].history
+        var history = User.listUser[0].dompet[0].history
+        history.add(History(3000000,"Tabungan dari gaji","Umum","2022 Oct 21",1))
+        history.add(History(5000000,"Pemberian orang tua","Sumbangan","2022 Oct 21",1))
+        history.add(History(1000000,"Bonus kerja","Umum","2022 Oct 21",1))
+        history.add(History(6000000,"Bayar uang kuliah","Pendikikan","2022 Oct 21",-1))
+        history.add(History(3000000,"Bunga Deposito","Umum","2022 Oct 21",1))
+        history.add(History(2000000,"Sumbangan","Sumbangan","2022 Oct 21",-1))
+        history.add(History(10000000,"Cicilan Iphone","Belanja","2022 Oct 21",-1))
+
+        history = User.listUser[0].history
         history.add(History(3000000,"Tabungan dari gaji","Umum","2022 Oct 21",1))
         history.add(History(5000000,"Pemberian orang tua","Sumbangan","2022 Oct 21",1))
         history.add(History(1000000,"Bonus kerja","Umum","2022 Oct 21",1))

@@ -6,5 +6,6 @@ class History(
     val jenis: String,
     val tanggal: String,
     val tipe: Int,
+    val orang: String = "",
 ) {
 }

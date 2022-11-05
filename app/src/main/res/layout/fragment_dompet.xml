@@ -8,7 +8,7 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:id="@+id/tvNamaUser_dompet"
+        android:id="@+id/tvNama_dompet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Hi, user !" />
@@ -18,7 +18,7 @@
         android:layout_height="20dp" />
 
     <TextView
-        android:id="@+id/tvTotalTabungan_dompet"
+        android:id="@+id/tvTabungan_dompet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Total Tabungan :\nRp. 120.000.000,00"

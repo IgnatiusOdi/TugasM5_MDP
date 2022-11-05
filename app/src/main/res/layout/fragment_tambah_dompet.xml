@@ -19,7 +19,7 @@
         android:layout_height="20dp" />
 
     <EditText
-        android:id="@+id/etNama_tambah_dompet"
+        android:id="@+id/etNama_dompet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -27,7 +27,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/etSaldo_tambah_dompet"
+        android:id="@+id/etSaldo_dompet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -39,19 +39,19 @@
         android:layout_height="20dp" />
 
     <RadioGroup
-        android:id="@+id/rgTipe_tambah_dompet"
+        android:id="@+id/rgTipe_dompet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <RadioButton
-            android:id="@+id/rbSpending_tambah_dompet"
+            android:id="@+id/rbSpending_dompet"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:checked="true"
             android:text="Spending Pocket (1.5%)" />
 
         <RadioButton
-            android:id="@+id/rbSaving_tambah_dompet"
+            android:id="@+id/rbSaving_dompet"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Saving Pocket (4.5%)" />
@@ -62,7 +62,7 @@
         android:layout_height="20dp" />
 
     <EditText
-        android:id="@+id/etPIN_tambah_dompet"
+        android:id="@+id/etPIN_dompet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -76,13 +76,13 @@
         android:layout_weight="1" />
 
     <Button
-        android:id="@+id/btTambah_tambah_dompet"
+        android:id="@+id/btTambah_dompet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TAMBAH" />
 
     <Button
-        android:id="@+id/btBack_tambah_dompet"
+        android:id="@+id/btBack_dompet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/red"

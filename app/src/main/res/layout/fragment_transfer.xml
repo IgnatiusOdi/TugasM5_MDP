@@ -40,7 +40,8 @@
     <Spinner
         android:id="@+id/spinnerJenis_transfer"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:entries="@array/jenis" />
 
     <Space
         android:layout_width="match_parent"
@@ -78,7 +79,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Jumlah"
-        android:inputType="textPersonName" />
+        android:inputType="number" />
 
     <Space
         android:layout_width="match_parent"
@@ -90,7 +91,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="PIN"
-        android:inputType="textPersonName" />
+        android:inputType="number"
+        android:password="true" />
 
     <Space
         android:layout_width="match_parent"
