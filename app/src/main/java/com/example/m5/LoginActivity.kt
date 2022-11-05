@@ -1,5 +1,6 @@
 package com.example.m5
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -15,15 +16,14 @@ class LoginActivity : AppCompatActivity() {
     lateinit var btToRegister: Button
 
     private var indexUser = -1
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        etUsername = findViewById(R.id.etUsernameLogin)
-        etPassword = findViewById(R.id.etPasswordLogin)
-        btLogin = findViewById(R.id.btLogin)
-        btToRegister = findViewById(R.id.btToRegister)
+        etUsername = findViewById(R.id.etUsername_login)
+        etPassword = findViewById(R.id.etPassword_login)
+        btLogin = findViewById(R.id.btLogin_login)
+        btToRegister = findViewById(R.id.btToRegister_login)
 
         // DEBUG
         User.listUser.add(User("David", "a", "a", "1234", "1589762555", Date()))

@@ -87,13 +87,13 @@
         android:layout_weight="1" />
 
     <Button
-        android:id="@+id/btRegister"
+        android:id="@+id/btRegister_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="REGISTER" />
 
     <Button
-        android:id="@+id/btToLogin"
+        android:id="@+id/btToLogin_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TO LOGIN" />

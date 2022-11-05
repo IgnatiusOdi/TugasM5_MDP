@@ -13,6 +13,7 @@ class User (
     val norek: String,
     var tanggal: Date,
     var dompet: ArrayList<Dompet> = arrayListOf(Dompet("Main Pocket", 0, "Spending Pocket")),
+    var contact: ArrayList<User> = arrayListOf()
 ) {
     companion object {
         var listUser = ArrayList<User>()

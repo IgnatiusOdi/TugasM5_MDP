@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="40dp"
-    tools:context=".LoginActivity">
+    tools:context=".FragmentAddContact">
 
+    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="LOGIN"
-        android:textSize="34sp" />
+        android:text="Add Contact"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <Space
         android:layout_width="match_parent"
@@ -21,42 +20,38 @@
         android:layout_weight="1" />
 
     <EditText
-        android:id="@+id/etUsername_login"
+        android:id="@+id/etNomorRekening_add_contact"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Username"
-        android:inputType="textPersonName"
-        android:text="a" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="20dp" />
+        android:hint="Nomor Rekening"
+        android:inputType="number" />
 
     <EditText
-        android:id="@+id/etPassword_login"
+        android:id="@+id/etPIN_add_contact"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:text="a" />
+        android:hint="PIN"
+        android:inputType="number"
+        android:password="true" />
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1" />
+        android:layout_weight="2" />
 
     <Button
-        android:id="@+id/btLogin_login"
+        android:id="@+id/btAdd_add_contact"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="LOGIN" />
+        android:text="Add Contact" />
 
     <Button
-        android:id="@+id/btToRegister_login"
+        android:id="@+id/btBack_add_contact"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TO REGISTER" />
+        android:backgroundTint="@color/red"
+        android:text="Back" />
 
 </LinearLayout>

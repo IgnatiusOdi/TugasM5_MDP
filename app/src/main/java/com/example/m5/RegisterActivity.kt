@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import androidx.core.text.isDigitsOnly
 import java.util.*
 
 class RegisterActivity : AppCompatActivity() {
@@ -26,8 +25,8 @@ class RegisterActivity : AppCompatActivity() {
         etPassword = findViewById(R.id.etPassword_register)
         etConfirm = findViewById(R.id.etConfirm_register)
         etPin = findViewById(R.id.etPIN_register)
-        btRegister = findViewById(R.id.btRegister)
-        btToLogin = findViewById(R.id.btToLogin)
+        btRegister = findViewById(R.id.btRegister_register)
+        btToLogin = findViewById(R.id.btToLogin_register)
 
         btRegister.setOnClickListener {
             if (registerCheck()) {

@@ -1,67 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp"
-    tools:context=".TopupWithdrawActivity">
+    tools:context=".FragmentTransfer">
 
+    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:id="@+id/tvTitleWithdraw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text="Withdraw"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/tvNamaDompet"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Tabungan Pensiun"
+        android:text="Transfer"
         android:textSize="20sp"
         android:textStyle="bold" />
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="30dp" />
+        android:layout_height="60dp" />
 
     <TextView
-        android:id="@+id/tvTotalDompet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Total Asset:\nRp60.000.000,00"
-        android:textSize="20sp" />
+        android:text="Contact :" />
+
+    <Spinner
+        android:id="@+id/spinnerContact_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="30dp" />
-
-    <TextView
-        android:id="@+id/tvTitleStatusDompet"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="WITHDRAW ASSET"
-        android:textStyle="bold" />
-
-    <EditText
-        android:id="@+id/etNominalDompet"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Nominal"
-        android:inputType="number" />
-
-    <EditText
-        android:id="@+id/etKeteranganDompet"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Keterangan"
-        android:inputType="textPersonName" />
+        android:layout_height="10dp" />
 
     <TextView
         android:layout_width="match_parent"
@@ -69,19 +38,59 @@
         android:text="Jenis" />
 
     <Spinner
-        android:id="@+id/spinnerStatusDompet"
+        android:id="@+id/spinnerJenis_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/jenis" />
+        android:text="Dompet" />
+
+    <Spinner
+        android:id="@+id/spinnerDompet_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
 
     <EditText
-        android:id="@+id/etPINDompet"
+        android:id="@+id/etKeterangan_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Keterangan"
+        android:inputType="textPersonName" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <EditText
+        android:id="@+id/etJumlah_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Jumlah"
+        android:inputType="textPersonName" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <EditText
+        android:id="@+id/etPIN_transfer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="PIN"
-        android:inputType="number"
-        android:password="true" />
+        android:inputType="textPersonName" />
 
     <Space
         android:layout_width="match_parent"
@@ -89,15 +98,9 @@
         android:layout_weight="1" />
 
     <Button
-        android:id="@+id/btActionDompet"
+        android:id="@+id/btTransfer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="WITHDRAW" />
+        android:text="Transfer" />
 
-    <Button
-        android:id="@+id/btBackDompet"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/red"
-        android:text="BACK" />
 </LinearLayout>

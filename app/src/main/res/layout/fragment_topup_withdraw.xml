@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FragmentTopupWithdraw">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tvTitleWithdraw_topup_withdraw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Withdraw"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvNama_topup_withdraw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tabungan Pensiun"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:id="@+id/tvTotal_topup_withdraw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Asset:\nRp60.000.000,00"
+        android:textSize="20sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:id="@+id/tvTitleStatus_topup_withdraw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WITHDRAW ASSET"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etNominal_topup_withdraw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nominal"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etKeterangan_topup_withdraw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Keterangan"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jenis" />
+
+    <Spinner
+        android:id="@+id/spinnerStatus_topup_withdraw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/jenis" />
+
+    <EditText
+        android:id="@+id/etPIN_topup_withdraw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="PIN"
+        android:inputType="number"
+        android:password="true" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btAction_topup_withdraw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WITHDRAW" />
+
+    <Button
+        android:id="@+id/btBack_topup_withdraw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:text="BACK" />
+
+</LinearLayout>

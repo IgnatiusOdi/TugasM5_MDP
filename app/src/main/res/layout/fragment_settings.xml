@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp"
-    tools:context=".SettingsActivity">
+    tools:context=".FragmentSettings">
 
+    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -32,7 +31,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="30dp" />
+            android:layout_height="40dp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -47,12 +46,21 @@
             android:hint="YYYY/MM/DD"
             android:inputType="date" />
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ganti PIN" />
+
         <EditText
-            android:id="@+id/etPIN_settings"
+            android:id="@+id/etPINBaru_settings"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="PIN"
+            android:hint="PIN Baru"
             android:inputType="number"
             android:password="true" />
 
@@ -61,18 +69,25 @@
             android:layout_height="wrap_content"
             android:layout_weight="1" />
 
+        <EditText
+            android:id="@+id/etPINSekarang_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="PIN Sekarang"
+            android:inputType="number"
+            android:password="true" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
         <Button
             android:id="@+id/btSave_settings"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="SAVE" />
 
-        <Button
-            android:id="@+id/btBack_settings"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/red"
-            android:text="BACK" />
     </LinearLayout>
 
 </LinearLayout>

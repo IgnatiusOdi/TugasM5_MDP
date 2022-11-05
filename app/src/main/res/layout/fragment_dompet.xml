@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FragmentDompet">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tvNamaUser_dompet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hi, user !" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/tvTotalTabungan_dompet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Tabungan :\nRp. 120.000.000,00"
+        android:textSize="20sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_dompet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/btTambahDompet_dompet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tambah Dompet" />
+
+</LinearLayout>
